@@ -6,19 +6,23 @@
 - F3: Buyer Browse + Search + Category filter
 - F4: Shopping Cart
 - F5: Checkout with mock payment
+- F6: Order model + OrderDAO (order creation & history)
+- F8: Review model + ReviewDAO (ratings & comments)
 - Basic DAO layer + BCrypt + AuthFilter
-- H2 Database + schema + seed data
-- README and project documentation
+- H2 Database + expanded schema (users, products, orders, order_items, reviews)
+- README, CONTRIBUTING, RETRO and progress documentation
 
 ## In Progress
-- F6: Order History (Buyer & Seller views)
-- F7: Admin Panel
-- F8: Product Reviews & Ratings
+- F7: Admin Panel (view users / moderate listings)
+- Connecting OrderDAO and ReviewDAO to Servlets & JSPs
+- Final UI polish
 
 ## Upcoming
-- Final regression testing
+- Full regression testing
 - Live deployment
-- Final report & demo video
+- Final report, slide deck and demo video
 
 ## Notes
-Regular commits maintained. Layered architecture (DAO → Service → Servlet) followed.
+- Layered architecture (DAO → Service → Servlet) followed
+- Regular commits maintained
+- Security practices: PreparedStatement + BCrypt + AuthFilter
