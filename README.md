@@ -1,16 +1,57 @@
 # Ecommerce-Prithi295
 
-Week 1 authentication and base DAO layer for an e-commerce web application.
+Full-stack e-commerce web application developed as part of academic project (YourNameMart style).
 
-## Week 1 features
-- Buyer and Seller registration
-- Login authentication
+## Features Implemented
+
+### Core Features (F1 – F8)
+- **F1** User Registration & Login (Buyer / Seller roles + seeded Admin)
+- **F2** Seller product management (create / view products)
+- **F3** Buyer product browsing with keyword search and category filter
+- **F4** Session-based shopping cart with running total
+- **F5** Checkout with mock payment confirmation
+- **F6** Order history (Buyer) and incoming orders (Seller)
+- **F7** Admin panel – view users and moderate listings
+- **F8** Product reviews and star ratings
+
+### Technical Highlights
+- Java 17 + Maven + Servlets + JSP
+- JDBC with PreparedStatement (SQL injection safe)
 - BCrypt password hashing
-- HttpSession management
-- Authentication and encoding filters
-- JDBC DAO layer using PreparedStatement and try-with-resources
-- H2/JUnit test setup
-- ServletContextListener database lifecycle
+- Session management + AuthFilter
+- H2 in-memory database
+- DAO → Service → Servlet layered architecture
+- Design patterns used: DAO, Front Controller, Singleton (DatabaseManager)
 
-## Technology
-Java 17, Maven, Tomcat 9.x, Java Servlets, JDBC, H2, BCrypt.
+## Project Structure
+src/
+├── main/
+│   ├── java/com/ecommerce/
+│   │   ├── dao/
+│   │   ├── model/
+│   │   ├── service/
+│   │   ├── servlet/
+│   │   ├── filter/
+│   │   └── util/
+│   └── webapp/
+│       ├── WEB-INF/
+│       └── *.jsp
+└── test/
+
+
+## How to Run (Local)
+1. Install Java 17 and Maven
+2. `mvn clean package`
+3. Deploy the generated WAR on Tomcat 9+
+4. Access: `http://localhost:8080/ecommerce-prithi295`
+
+## Database
+- H2 Database
+- Schema and seed data available in `schema.sql` and `seed.sql`
+- Default Admin account is seeded (no public signup for Admin)
+
+## Commit History
+Maintained regular commits throughout development following weekly milestones.
+
+## Author
+Prithiyanka
