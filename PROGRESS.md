@@ -1,23 +1,23 @@
 # Project Progress - Ecommerce-Prithi295
 
-## Completed
-- F1: User Registration & Login (Buyer / Seller + Admin seed)
-- F2: Seller Product management
-- F3: Buyer Browse + Search + Category filter
+## Completed (as of Sep 15)
+- F1: Registration & Login (Buyer / Seller / Admin)
+- F2: Seller product management
+- F3: Browse + Search + Category filter
 - F4: Shopping Cart
-- F5: Checkout with mock payment
-- F6: Order model + OrderDAO + OrderServlet + orders.jsp
-- F7: AdminServlet + admin.jsp (basic admin panel)
-- F8: Review model + ReviewDAO
-- Expanded database schema (users, products, orders, order_items, reviews)
-- Security: BCrypt, PreparedStatement, AuthFilter
-- Documentation: README, CONTRIBUTING, RETRO, PROGRESS
+- F5: Checkout (mock payment)
+- F6: Full Order support (Model + DAO + Servlet + JSP)
+- F7: Admin panel (AdminServlet + admin.jsp)
+- F8: Reviews (Model + DAO + Servlet + form page)
+- Database schema expanded
+- Security practices applied
+- Documentation complete (README, CONTRIBUTING, RETRO, SECURITY, FINAL_CHECKLIST)
 
-## Remaining
-- Connect reviews to product pages
-- Final UI polish and testing
-- Live deployment
-- Final report + demo video
+## Remaining for Final Review
+- Live cloud deployment
+- AI Chatbot (mandatory for final)
+- Final report + slides + demo video
+- Regression testing
 
-## Notes
-Layered architecture followed. Regular commits maintained throughout development.
+## Status
+Core e-commerce features F1–F8 foundation is complete. Ready for final polish and documentation phase.
