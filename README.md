@@ -53,5 +53,12 @@ src/
 ## Commit History
 Maintained regular commits throughout development following weekly milestones.
 
+## Latest Updates (Sep 2026)
+- Added Order history (F6)
+- Added basic Admin panel (F7)
+- Added Review support (F8)
+- Expanded database schema
+- Added security checklist and improved documentation
+
 ## Author
 Prithiyanka
