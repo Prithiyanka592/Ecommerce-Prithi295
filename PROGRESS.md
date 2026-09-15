@@ -1,23 +1,17 @@
 # Project Progress - Ecommerce-Prithi295
 
-## Completed (as of Sep 15)
-- F1: Registration & Login (Buyer / Seller / Admin)
-- F2: Seller product management
-- F3: Browse + Search + Category filter
-- F4: Shopping Cart
-- F5: Checkout (mock payment)
-- F6: Full Order support (Model + DAO + Servlet + JSP)
-- F7: Admin panel (AdminServlet + admin.jsp)
-- F8: Reviews (Model + DAO + Servlet + form page)
-- Database schema expanded
-- Security practices applied
-- Documentation complete (README, CONTRIBUTING, RETRO, SECURITY, FINAL_CHECKLIST)
+## Completed
+- F1 to F8 core e-commerce features
+- O4 Mock AI Chatbot (ChatServlet + chat.jsp)
+- Full documentation set
+- Security checklist
+- Expanded database schema
+- 25+ meaningful commits
 
-## Remaining for Final Review
-- Live cloud deployment
-- AI Chatbot (mandatory for final)
-- Final report + slides + demo video
-- Regression testing
+## Remaining for Final Submission
+- Live deployment
+- Final report + diagrams
+- Slide deck + demo video
 
 ## Status
-Core e-commerce features F1–F8 foundation is complete. Ready for final polish and documentation phase.
+Project foundation is complete and ready for final documentation and deployment phase.
