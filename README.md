@@ -13,6 +13,7 @@ Full-stack e-commerce web application developed as part of academic project (You
 - **F6** Order history (Buyer) and incoming orders (Seller)
 - **F7** Admin panel – view users and moderate listings
 - **F8** Product reviews and star ratings
+- **O4** AI Chatbot (mock FAQ-based support)
 
 ### Technical Highlights
 - Java 17 + Maven + Servlets + JSP
@@ -59,6 +60,7 @@ Maintained regular commits throughout development following weekly milestones.
 - Added Review support (F8)
 - Expanded database schema
 - Added security checklist and improved documentation
+- Added Mock AI Chatbot (O4)
 
 ## Author
 Prithiyanka
