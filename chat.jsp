@@ -2,33 +2,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AI Chatbot Support</title>
+    <title>AI Chat Support</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #f4f4f4; }
-        .chat-box { background: white; padding: 20px; border-radius: 8px; max-width: 600px; }
-        .bot { background: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 5px; }
-        .user { background: #e3f2fd; padding: 10px; margin: 10px 0; border-radius: 5px; }
-        input[type=text] { width: 70%; padding: 10px; }
-        button { padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f3f3f3; }
+        .header { background: #131921; color: white; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header a { color: white; text-decoration: none; margin-left: 18px; }
+        .logo { font-size: 22px; font-weight: bold; color: #febd69; }
+        .chat-container { max-width: 600px; margin: 30px auto; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; }
+        .chat-header { background: #232f3e; color: white; padding: 15px 20px; font-weight: bold; }
+        .chat-body { padding: 20px; min-height: 300px; }
+        .message { margin-bottom: 15px; padding: 12px 16px; border-radius: 12px; max-width: 80%; }
+        .user { background: #e3f2fd; margin-left: auto; text-align: right; }
+        .bot { background: #f1f1f1; }
+        .chat-input { display: flex; border-top: 1px solid #eee; }
+        .chat-input input { flex: 1; padding: 15px; border: none; outline: none; }
+        .chat-input button { padding: 15px 25px; background: #febd69; border: none; cursor: pointer; font-weight: bold; }
+        .chat-input button:hover { background: #f3a847; }
     </style>
 </head>
 <body>
-    <h1>AI Chatbot Support</h1>
-    <p>Ask about products, orders, delivery, payment, or returns.</p>
+    <div class="header">
+        <div class="logo">Ecommerce-Prithi</div>
+        <div>
+            <a href="dashboard.jsp">Home</a>
+            <a href="products.jsp">Products</a>
+            <a href="logout">Logout</a>
+        </div>
+    </div>
 
-    <div class="chat-box">
-        <% if (request.getAttribute("userMessage") != null) { %>
-            <div class="user"><strong>You:</strong> <%= request.getAttribute("userMessage") %></div>
-            <div class="bot"><strong>Bot:</strong> <%= request.getAttribute("botReply") %></div>
-        <% } %>
-
-        <form action="chat" method="post">
+    <div class="chat-container">
+        <div class="chat-header">AI Chat Support</div>
+        <div class="chat-body">
+            <% if (request.getAttribute("userMessage") != null) { %>
+                <div class="message user">
+                    <strong>You:</strong> <%= request.getAttribute("userMessage") %>
+                </div>
+                <div class="message bot">
+                    <strong>Bot:</strong> <%= request.getAttribute("botReply") %>
+                </div>
+            <% } else { %>
+                <div class="message bot">
+                    <strong>Bot:</strong> Hello! Ask me about products, orders, delivery, payment or returns.
+                </div>
+            <% } %>
+        </div>
+        <form class="chat-input" action="chat" method="post">
             <input type="text" name="message" placeholder="Type your question..." required>
             <button type="submit">Send</button>
         </form>
     </div>
-
-    <br>
-    <a href="dashboard.jsp">Back to Dashboard</a>
 </body>
 </html>
