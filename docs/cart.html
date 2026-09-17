@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f3f3; }
+        .header { background: #131921; color: white; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #febd69; }
+        .nav a { color: white; text-decoration: none; margin-left: 20px; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+        .total { font-size: 20px; font-weight: bold; margin-top: 20px; text-align: right; }
+        .btn { background: #ffd814; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Ecommerce-Prithi</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>Wireless Mouse</td>
+                <td>₹499</td>
+                <td>1</td>
+                <td>₹499</td>
+            </tr>
+            <tr>
+                <td>Cotton T-Shirt</td>
+                <td>₹299</td>
+                <td>2</td>
+                <td>₹598</td>
+            </tr>
+        </table>
+        <div class="total">Total: ₹1097</div>
+        <div style="text-align: right; margin-top: 25px;">
+            <button class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
