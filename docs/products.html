@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f3f3; }
+        .header { background: #131921; color: white; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #febd69; }
+        .nav a { color: white; text-decoration: none; margin-left: 20px; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .product-card { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+        .product-card img { width: 100%; height: 160px; object-fit: contain; }
+        .price { color: #b12704; font-size: 18px; font-weight: bold; margin: 10px 0; }
+        .btn { background: #ffd814; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Ecommerce-Prithi</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="margin-bottom: 25px;">All Products</h1>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Mouse">
+                <h3>Wireless Mouse</h3>
+                <div class="price">₹499</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="T-Shirt">
+                <h3>Cotton T-Shirt</h3>
+                <div class="price">₹299</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Notebook">
+                <h3>Notebook Set</h3>
+                <div class="price">₹199</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Headphones">
+                <h3>Bluetooth Headphones</h3>
+                <div class="price">₹1999</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Bottle">
+                <h3>Water Bottle</h3>
+                <div class="price">₹349</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Keyboard">
+                <h3>Mechanical Keyboard</h3>
+                <div class="price">₹2499</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
