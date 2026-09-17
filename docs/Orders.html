@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | Ecommerce-Prithi</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f3f3; }
+        .header { background: #131921; color: white; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #febd69; }
+        .nav a { color: white; text-decoration: none; margin-left: 18px; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #f8f8f8; }
+        .status { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        .footer { background: #131921; color: #ddd; text-align: center; padding: 20px; margin-top: 50px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Ecommerce-Prithi</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">Orders</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Your Orders</h1>
+        <table>
+            <tr>
+                <th>Order ID</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>#1001</td>
+                <td>₹1097</td>
+                <td><span class="status">Pending</span></td>
+                <td>15 Sep 2026</td>
+            </tr>
+            <tr>
+                <td>#1002</td>
+                <td>₹1999</td>
+                <td><span class="status">Shipped</span></td>
+                <td>12 Sep 2026</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">© 2026 Ecommerce-Prithi | Academic Project</div>
+</body>
+</html>
