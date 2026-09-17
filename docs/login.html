@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 360px; }
+        h1 { text-align: center; margin-bottom: 25px; }
+        label { display: block; margin-top: 15px; font-size: 14px; }
+        input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; }
+        button { width: 100%; margin-top: 25px; padding: 12px; background: #ffd814; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; }
+        .link { text-align: center; margin-top: 20px; font-size: 14px; }
+        .link a { color: #0066c0; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Sign In</h1>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="link">
+            New customer? <a href="register.html">Create account</a>
+        </div>
+    </div>
+</body>
+</html>
