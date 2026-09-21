@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Drop Alert | Ecommerce-Prithi</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f3f3; color: #111; }
+        .header { background: #131921; color: white; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 22px; font-weight: bold; color: #febd69; }
+        .nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+        .nav a:hover { color: #febd69; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 3px 12px rgba(0,0,0,0.08); margin-bottom: 25px; }
+        h1 { margin-bottom: 10px; }
+        .subtitle { color: #555; margin-bottom: 25px; }
+        label { display: block; margin-top: 15px; font-size: 14px; font-weight: bold; }
+        input, select { width: 100%; padding: 12px; margin-top: 6px; border: 1px solid #ddd; border-radius: 6px; font-size: 15px; }
+        .btn { background: #ffd814; border: none; padding: 12px 28px; border-radius: 25px; font-weight: bold; cursor: pointer; margin-top: 20px; font-size: 15px; }
+        .btn:hover { background: #f7ca00; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 14px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #f8f8f8; }
+        .status { background: #e8f5e9; color: #2e7d32; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        .footer { background: #131921; color: #ddd; text-align: center; padding: 20px; margin-top: 50px; font-size: 14px; }
+        .highlight { background: #fff8e1; border-left: 4px solid #ffd814; padding: 15px; margin-bottom: 25px; border-radius: 0 8px 8px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Ecommerce-Prithi</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="price-alert.html">Price Alert</a>
+            <a href="orders.html">Orders</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1>Price Drop Alert</h1>
+            <p class="subtitle">Set your target budget. We will notify you when the product price drops.</p>
+
+            <div class="highlight">
+                <strong>Unique Feature:</strong> Unlike normal e-commerce websites, you can set a budget for any product. 
+                When the price reaches your target, you get notified.
+            </div>
+
+            <form>
+                <label>Select Product</label>
+                <select>
+                    <option>Wireless Mouse - ₹499</option>
+                    <option>Cotton T-Shirt - ₹299</option>
+                    <option>Bluetooth Headphones - ₹1999</option>
+                    <option>Mechanical Keyboard - ₹2499</option>
+                    <option>Water Bottle - ₹349</option>
+                </select>
+
+                <label>Your Target Price (Budget)</label>
+                <input type="number" placeholder="Enter amount (e.g. 399)" required>
+
+                <button type="submit" class="btn">Set Price Alert</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>My Active Alerts</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Current Price</th>
+                    <th>Target Price</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Wireless Mouse</td>
+                    <td>₹499</td>
+                    <td>₹399</td>
+                    <td><span class="status">Watching</span></td>
+                </tr>
+                <tr>
+                    <td>Bluetooth Headphones</td>
+                    <td>₹1999</td>
+                    <td>₹1499</td>
+                    <td><span class="status">Watching</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Ecommerce-Prithi | Unique Feature: Price Drop Alert
+    </div>
+</body>
+</html>
